@@ -1,0 +1,11 @@
+a,b=map(int,input().split())
+c=int(input())
+tempA=c//60
+tempB=c%60
+a+=tempA
+b+=tempB
+tempB=b%60
+a+=(b//60)
+b=tempB
+a=a%24
+print(a,b)
